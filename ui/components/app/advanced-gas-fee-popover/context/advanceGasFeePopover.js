@@ -7,7 +7,7 @@ export const AdvanceGasFeePopoverContextProvider = ({ children }) => {
   const [maxFeePerGas, setMaxFeePerGas] = useState();
   const [maxPriorityFeePerGas, setMaxPriorityFeePerGas] = useState();
   const [isDirty, setDirty] = useState();
-  const [maxBaseFee, setMaxBaseFee] = useState();
+  const [baseFeeMultiplier, setBaseFeeMultiplier] = useState();
 
   return (
     <AdvanceGasFeePopoverContext.Provider
@@ -15,11 +15,11 @@ export const AdvanceGasFeePopoverContextProvider = ({ children }) => {
         isDirty,
         maxFeePerGas,
         maxPriorityFeePerGas,
-        maxBaseFee,
+        baseFeeMultiplier,
         setDirty,
         setMaxPriorityFeePerGas,
         setMaxFeePerGas,
-        setMaxBaseFee,
+        setBaseFeeMultiplier,
       }}
     >
       {children}
