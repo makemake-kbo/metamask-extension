@@ -8,7 +8,7 @@ import Typography from '../../../ui/typography/typography';
 import { BaseFeeTooltip, PriorityFeeTooltip } from './tooltips';
 import StatusSlider from './status-slider';
 
-const  = () => {
+const NetworkStatistics = () => {
   const { gasFeeEstimates } = useGasFeeContext();
 
   return (
@@ -52,6 +52,4 @@ const  = () => {
   );
 };
 
-.propTypes = {};
-
-export default ;
+export default NetworkStatistics;
